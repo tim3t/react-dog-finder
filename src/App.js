@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
 
 import NavBar from './NavBar';
 
@@ -13,6 +13,9 @@ function App() {
 		<div>
 			<BrowserRouter>
 				<NavBar dogs={dogs} />
+				<div>
+					<Routes dogs={dogs} />
+				</div>
 			</BrowserRouter>
 		</div>
 	);
